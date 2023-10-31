@@ -79,7 +79,13 @@ public class Transactions extends JFrame implements ActionListener {
         }else if (ae.getSource() == fastCash){
             setVisible(false);
             new FastCash(pinnumber).setVisible(true);
-        }
+        }else if (ae.getSource() == changePin){
+            setVisible(false);
+            new PinChange(pinnumber).setVisible(true);
+        }else if (ae.getSource() == balanceEnquiry){
+            setVisible(false);
+            new BalanceEnquiry(pinnumber).setVisible(true);
+        }   
     }
     public static void main(String args[]) {
        new Transactions("");
