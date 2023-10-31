@@ -8,7 +8,7 @@ public class MiniStatement extends JFrame {
     MiniStatement(){
         setTitle("Mini Statement");
         
-        setLayout(null);
+        setLayout(null);  
         
         
         
